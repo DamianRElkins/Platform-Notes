@@ -12,4 +12,20 @@
 
 - Sector Level Assessment
   - We have already, pressures and dependencies by sector
+
+- Company Level Assessment
   - Fig 1 is site based, we could do supplier based like in later section
+
+### Risk and Opportunity
+
+- Risk Analysis Section
+  - WWF risk filter, looks at groups of sites and their level of risk based on WWF
+  
+### Risks and Opportunities based on impact and dependency assessment   
+
+- Priority Ecosystem Services 
+  - Just a list of top ES, we do this already
+
+- Underlying Direct Drivers
+  - Essentially our Risk pathways, they seem to use ENCORE pressures "direct drivers"
+  
