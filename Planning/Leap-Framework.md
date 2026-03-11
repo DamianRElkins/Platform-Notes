@@ -21,7 +21,7 @@
   - Location of operations and suplly as it relates to dep and impact
   - Location of operations and supply as it relates to biomes
 
--L4
+- L4
   - Sensitive location
 
 ## (E)valuate
