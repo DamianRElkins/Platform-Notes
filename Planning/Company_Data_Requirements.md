@@ -32,3 +32,5 @@ Why?
 The first example allows us to assign the best fitting category to your expense because it is specific, and there can be no confusion about what it is referring to.
 
 The second example makes assigning an appropriate category difficult. First, because Development could apply to multiple kinds of development (Construction Development, Software Development). Second, because it is not specific about what part of the development it is talking about (Architectural Consulting, Construction Labourers, Materials).
+
+### Ideal Supplier Standard
