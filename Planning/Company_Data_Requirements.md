@@ -43,3 +43,10 @@ Supplier names should not have variants unless it is desired for them to be calc
 The country the supplier is based in can be provided for improved accuracy.
 
 The exact location the supplier operates in or materials are sourced from should be provided for deeper levels of analysis. (Coordinates or Addresses)
+
+### Internal Codes and Categories
+
+Internal codes and categories allow us to assign categories more uniformly, items you have grouped together will remain grouped together.
+They also help us understand the context of each item better, more context means more accurate assignments.
+
+Without internal codes and categories, items will be assigned categories solely based on the item name which will still be accurate if the item name is descriptive.
