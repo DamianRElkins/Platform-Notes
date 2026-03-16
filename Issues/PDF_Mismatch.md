@@ -12,6 +12,15 @@ One Click uses sum of direct impacts, making product, transporting it to you, an
 
 Compare this with using CF x S which is direct impact ~10-15x less than CF x M
 
+For major materials (M divided by S)
+
+- Steel - 3.1
+- Aluminium - 17.5
+- Concrete - 8.9
+- Plaster - 1.8
+- Cement - 1.8
+- Wood etc. - 7.9
+
 # One Click LCA (A1–A5) — process-based approach
 
 **Question being asked:**  
