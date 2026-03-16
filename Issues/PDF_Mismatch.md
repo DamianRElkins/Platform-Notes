@@ -223,5 +223,7 @@ Because EXIOBASE captures **much deeper supply chains**, it often estimates **la
 # Options:
 
 Explain the reasoning behind the difference (would need to look more closely into this)
+
 Use the CF x S multipliers for pdf and label it as direct impact (lessens our value pitch)
+
 Use both CF x S and CF x M multipliers and show direct and full supply chain
