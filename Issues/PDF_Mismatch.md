@@ -2,13 +2,15 @@
 
 Lendlease gave us numbers we converted unit -> kg then kg/unit -> GBP
 
-Our output number is 20x their number
+Our output number is 18x their number
 
 We are using CF x M to get pdf/gbp, this includes entire supply chain
 
 One Click uses sum of direct impacts, making product, transporting it to you, and installing the product
 
 - this truncates the supply chain at materials, exiobase includes way more in this
+
+Compare this with using CF x S which is direct impact ~10-15x less than CF x M
 
 # One Click LCA (A1–A5) — process-based approach
 
@@ -208,9 +210,8 @@ If construction-sector spending is included, impacts include:
 # Consequence
 
 Because EXIOBASE captures **much deeper supply chains**, it often estimates **larger total impacts** than process-based A1–A5 calculations.
-Compare this with using CF x S which is direct impact ~10-15x less than CF x M
 
-Options:
+# Options:
 
 Explain the reasoning behind the difference (would need to look more closely into this)
 Use the CF x S multipliers for pdf and label it as direct impact (lessens our value pitch)
