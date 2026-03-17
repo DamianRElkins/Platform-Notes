@@ -40,7 +40,6 @@ Key Assumptions:
 - The weighting is defined as below:
 
 $$
-\begin{aligned}
 a_{min} = \text{Lowest acceptable weight, default }=0.2 \\
 a_{max} = \text{Largest acceptable weight, default } = 1.2 \\
 \text{spend} = \text{The set of the spend amount of all items/groups depending on if we are weighting an item or a group} \\
@@ -49,5 +48,8 @@ s = \text{Spend on the item or group being weighted} \\
 f(s) = \frac{\log(s)-\log(\min(\text{spend}))}{\log(\max(\text{spend})) - \log(\min(\text{spend}))} \\
 \\
 w(s) = a_{min} + f(s) \times (a_{max}-a_{min})
-\end{aligned}
 $$
+
+### Final Dependency Score Calculation
+
+The dependency score calculation is based on a [report by the European Commission](https://publications.jrc.ec.europa.eu/repository/bitstream/JRC140003/JRC140003_01.pdf)
