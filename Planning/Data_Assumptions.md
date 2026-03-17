@@ -64,4 +64,4 @@ This will return a score 0-5 which is the dependency score of an item.
 
 The dependency score of a group is the weighted average of items in the group. Items are weighted by their raw spend.
 
-The spend weighted dependency score seen in the sidebar is the spend rating $w(s) \times $ dependency score.
+The spend weighted dependency score seen in the sidebar is the spend rating $w(s) \times$ dependency score.
