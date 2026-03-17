@@ -46,5 +46,6 @@ a_{max} = \text{Largest acceptable weight, default } = 1.2 \\
 \text{spend} = \text{The set of the spend amount of all items/groups depending on if we are weighting an item or a group} \\
 s = \text{Spend on the item or group being weighted} \\
 
+f(s) = \frac{\log(s)-\log(\min(spend))}{\log(\max(spend)) - \log(\min(spend))}
 \end{aligned}
 $$
