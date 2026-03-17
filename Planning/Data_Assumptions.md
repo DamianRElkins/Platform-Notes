@@ -24,4 +24,4 @@ The number of dependencies related to a category is a basic count of ES that hav
 
 Key Assumptions:
 
-- The number of dependencies is normalized into the 0-5 range using $ \frac{25 - \text{# related}}{25} \times 5 $
+- The number of dependencies is normalized into the 0-5 range using $\frac{25 - \text{# related}}{25} \times 5$
