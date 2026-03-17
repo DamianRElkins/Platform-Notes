@@ -37,4 +37,10 @@ Key Assumptions:
 
 - The dependency level of the group or item provided is in the 0-5 range.
 - The spend weighting is used to scale the level up to a maximum of 5.
-- The weighting is defined as below: $$a_{min} = \text{Lowest acceptable weight, default }=0.2 \\ a_max = \text{Largest acceptable weight, default } = 1.2$$
+- The weighting is defined as below:
+
+$$
+  a_{min} = \text{Lowest acceptable weight, default }=0.2 \\
+  a_{max} = \text{Largest acceptable weight, default } = 1.2 \\
+  \text{spend} = \text{The set of the spend amount of all items/groups depending on if we are weighing an item or a group}
+$$
