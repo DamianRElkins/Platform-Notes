@@ -43,7 +43,7 @@ The dependency score calculation is based on a [report by the European Commissio
 
 Key Assumptions:
 
-- It is defined as the mean of the mean materiality, maximum materiality, and normalised count of related ES.
+- It is defined as the mean of the mean materiality, maximum materiality, and normalized count of related ES.
 - This will return a score 0-5 which is the dependency score of an item.
 - The dependency score of a group is the weighted average of items in the group. Items are weighted by their raw spend.
 - The spend weighted dependency score seen in the sidebar is the spend rating $w(s) \times$ Dependency Score.
@@ -93,17 +93,20 @@ Key Assumptions:
     - The \# of related services or pressures present is the fraction of services or pressures related to the ecosystem component according to ENCORE that have a materiality rating greater than 0.
     - The \# number of related services or pressures present relative to the maximum is the number of services or pressures related to the ecosystem component with a materiality rating greater than 0 divided by the maximum possible number of related services or pressures of any ecosystem component.
       - This serves to prevent ecosystem components that provide fewer services or are more difficult to damage from being too highly scored. This is a proxy for component importance.
-      - The maximum possible related services is 19 and the maximum possible related pressures is 11.
+      - The maximum number of possible related services is 19 and the maximum possible related pressures is 11.
 - The overall ecosystem component risk score is the sum of the ecosystem component dependency and pressure scores.
 
 ### Risk Pathways
 
-Risk pathways are specific interactions between individual pressures and ecosystem services that are concerning.
-
-Risk pathways highlight where high pressures relate strongly to high dependencies through ecosystem components.
+Risk pathways are specific interactions between individual pressures and ecosystem services that are concerning. They highlight where high pressures relate strongly to high dependencies through ecosystem components.
 
 An example would be high land use damaging the structural integrity of the environment lessening its ability to prevent floods which your building site relies on for protection.
 
 Key Assumptions:
 
-- Individual pressure and dependencies are assigned mater
+- Individual pressure and dependencies are assigned materiality ratings
+- Ecosystem services are assigned a relationship rating (Red, Amber, Green) if they have a relationship with an ecosystem component
+- Relationship ratings are translated from Red, Amber, Green to 1, 0.5, 0.2
+- Pressures have a list of mechanisms of damage provided by ENCORE for each pressure - ecosystem component pairing that describe the ways that pressure can damage the component
+- Each pressure - ecosystem component pairing has a relationship rating that is the \# of mechanisms divided by the most mechanisms a pressure - ecosystem component relationship has
+- A risk pathway score is determined by $(\text{Pressure Materiality} \times \text{Pressure Relationship Rating}) \times (\text{Dependency Materiality} \times \text{Dependency Relationship Rating})$
