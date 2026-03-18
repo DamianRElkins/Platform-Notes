@@ -63,7 +63,7 @@ For example, GHG emissions impact the atmosphere which regulates your local clim
 
 For risk, impact and dependency scores are used in three ways.
 
-#### Overall Risk Score
+### Overall Risk Score
 
 The first is the overall risk score. This is a sum of the final impact and dependency scores for a given item or group. These are defined using the same methodology as above.
 
@@ -73,7 +73,7 @@ Key Assumptions:
 - Final pressure score is calculated in the same way as the final dependency score above.
 - Overall risk score is the sum of final dependency and pressure scores.
 
-#### Ecosystem Component Risk
+### Ecosystem Component Risk
 
 Ecosystem Components are the specific elements of the environment that provide the services we use and can be damaged by our actions.
 
@@ -96,7 +96,7 @@ Key Assumptions:
       - The maximum possible related services is 19 and the maximum possible related pressures is 11.
 - The overall ecosystem component risk score is the sum of the ecosystem component dependency and pressure scores.
 
-#### Risk Pathways
+### Risk Pathways
 
 Risk pathways are specific interactions between individual pressures and ecosystem services that are concerning.
 
