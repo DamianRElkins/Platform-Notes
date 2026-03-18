@@ -62,6 +62,12 @@ The dependency score calculation is based on a [report by the European Commissio
 
 It is defined as the mean of the mean materiality, maximum materiality, and normalised count of related ES.
 
+$$
+\begin{aligned}
+\text{Dependency Score} = \frac{\bar{materiality} + max(materiality) + |Related ES|}{3}
+\end{aligned}
+$$
+
 This will return a score 0-5 which is the dependency score of an item.
 
 The dependency score of a group is the weighted average of items in the group. Items are weighted by their raw spend.
