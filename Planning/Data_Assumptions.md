@@ -2,14 +2,12 @@
 
 This document aims to thoroughly catalogue all assumptions made in the processing of data.
 
-## Calculation
-
-### Dependency
+## Dependency
 
 The dependency level for an item is determined by 3 things, average materiality, maximum materiality, and the number of relevant dependencies.
 The spend weighted dependency level is based on this dependency level and the spend on the given item or group.
 
-#### Materiality Rating
+### Materiality Rating
 
 Our dependency system is defined using ENCORE dependency ratings. For each ISIC category ENCORE provides materiality ratings from Very Low - Very High dependency.
 These are assigned by Ecosystem Service (ES), so one category will have a set of 25 materiality ratings one for each ES.
@@ -21,7 +19,7 @@ Key Assumptions:
 - The average materiality is the mean materiality of relevant ES (ES with materiality > 0)
 - The maximum materiality is the highest materiality rating of an ES for a given item
 
-#### Number of Dependencies
+### Number of Dependencies
 
 The number of dependencies related to a category is a basic count of ES that have a materiality score greater than 0 (or equivalently higher than none).
 
@@ -29,7 +27,7 @@ Key Assumptions:
 
 - The number of dependencies is normalized into the 0-5 range using $\frac{25 - \text{Number of related ES}}{25} \times 5$
 
-#### Spend Rating
+### Spend Rating
 
 The spend rating of a group or item is only used in the sidebar. It is meant to highlight which groups or items have the most material dependency. Spend weighting prevents small high dependency groups and items from being ranked above very high spend moderate dependency groups and items.
 
@@ -64,7 +62,7 @@ It is defined as the mean of the mean materiality, maximum materiality, and norm
 
 $$
 \begin{aligned}
-\text{Dependency Score} = \frac{\bar{materiality} + max(materiality) + |\text{Related ES}|}{3}
+\text{Dependency Score} = \frac{\overline{materiality} + max(materiality) + |\text{Related ES}|}{3}
 \end{aligned}
 $$
 
@@ -72,4 +70,18 @@ This will return a score 0-5 which is the dependency score of an item.
 
 The dependency score of a group is the weighted average of items in the group. Items are weighted by their raw spend.
 
-The spend weighted dependency score seen in the sidebar is the spend rating $w(s) \times$ dependency score.
+The spend weighted dependency score seen in the sidebar is the spend rating $w(s) \times$ Dependency Score.
+
+## Risk
+
+Risk is a measure of the interaction between impact and dependency.
+
+It is based off ENCORE's pressures, ecosystem services, and ecosystem components.
+
+The intuition is that risk is high where your operations are impacting the aspects of the environment that provide services you depend on.
+
+For example, GHG emissions impact the atmosphere which regulates your local climate which you rely on for stable crop growth.
+
+### Impact and Dependency Scores
+
+Dependency scores are calculated as above for each ES. The same is done for pressures which are also assigned 1-5 materiality ratings in the ENCORE system.
