@@ -103,3 +103,7 @@ Risk pathways are specific interactions between individual pressures and ecosyst
 Risk pathways highlight where high pressures relate strongly to high dependencies through ecosystem components.
 
 An example would be high land use damaging the structural integrity of the environment lessening its ability to prevent floods which your building site relies on for protection.
+
+Key Assumptions:
+
+- Individual pressure and dependencies are assigned mater
