@@ -4,8 +4,7 @@ This document aims to thoroughly catalogue all assumptions made in the processin
 
 ## Dependency
 
-The dependency level for an item is determined by 3 things, average materiality, maximum materiality, and the number of relevant dependencies.
-The spend weighted dependency level is based on this dependency level and the spend on the given item or group.
+Your dependency is how your operations rely on nature to continue functioning. These dependencies are described by Ecosystem Services which are the benefits nature provides to support or protect business.
 
 ### Materiality Rating
 
@@ -35,42 +34,19 @@ Key Assumptions:
 
 - The dependency level of the group or item provided is in the 0-5 range.
 - The spend weighting is used to scale the level up to a maximum of 5.
-- The weighting is defined as below:
-
-$$
-\begin{aligned}
-a_{min} = \text{Lowest acceptable weight, default }=0.2 \\
-a_{max} = \text{Largest acceptable weight, default } = 1.2 \\
-\text{spend} = \text{The set of the spend amount of all items/groups depending on if we are weighting an item or a group} \\
-s = \text{Spend on the item or group being weighted}
-\end{aligned}
-$$
-
-$$
-\begin{aligned}
-f(s) = \frac{log(s)-log(min(\text{spend}))}{log(max(\text{spend})) - log(min(\text{spend}))} \\
-\\
-w(s) = a_{min} + f(s) \times (a_{max}-a_{min})
-\end{aligned}
-$$
+- The spend weight is between 0.2 to 1.2 and is on a logarithmic scale.
+- The spend-weighted dependency level is the product of the dependency level and the spend weight
 
 ### Final Dependency Score Calculation
 
 The dependency score calculation is based on a [report by the European Commission](https://publications.jrc.ec.europa.eu/repository/bitstream/JRC140003/JRC140003_01.pdf)
 
-It is defined as the mean of the mean materiality, maximum materiality, and normalised count of related ES.
+Key Assumptions:
 
-$$
-\begin{aligned}
-\text{Dependency Score} = \frac{\overline{materiality} + max(materiality) + |\text{Related ES}|}{3}
-\end{aligned}
-$$
-
-This will return a score 0-5 which is the dependency score of an item.
-
-The dependency score of a group is the weighted average of items in the group. Items are weighted by their raw spend.
-
-The spend weighted dependency score seen in the sidebar is the spend rating $w(s) \times$ Dependency Score.
+- It is defined as the mean of the mean materiality, maximum materiality, and normalised count of related ES.
+- This will return a score 0-5 which is the dependency score of an item.
+- The dependency score of a group is the weighted average of items in the group. Items are weighted by their raw spend.
+- The spend weighted dependency score seen in the sidebar is the spend rating $w(s) \times$ Dependency Score.
 
 ## Risk
 
@@ -78,10 +54,29 @@ Risk is a measure of the interaction between impact and dependency.
 
 It is based off ENCORE's pressures, ecosystem services, and ecosystem components.
 
+Pressures are ways your activity can impact the natural world.
 The intuition is that risk is high where your operations are impacting the aspects of the environment that provide services you depend on.
 
 For example, GHG emissions impact the atmosphere which regulates your local climate which you rely on for stable crop growth.
 
 ### Impact and Dependency Scores
 
-Dependency scores are calculated as above for each ES. The same is done for pressures which are also assigned 1-5 materiality ratings in the ENCORE system.
+For risk, impact and dependency scores are used in three ways.
+
+#### Overall Risk Score
+
+The first is the overall risk score. This is a sum of the final impact and dependency scores for a given item or group. These are defined using the same methodology as above.
+
+Key Assumptions:
+
+- Individual Pressures (Impacts) are assigned materiality scores 1-5 (or 0 if there is no material relation) in the same way as dependency.
+- Final pressure score is calculated in the same way as the final dependency score above.
+- Overall risk score is the sum of final dependency and pressure scores.
+
+#### Ecosystem Component Risk
+
+Ecosystem Components are the specific elements of the environment that provide the services we use and can be damaged by our actions.
+
+ENCORE provides us with the relationships between pressures and components and dependencies and components. This describes which ways we may damage the components and what services each component provides.
+
+#### Risk Pathways
