@@ -94,5 +94,12 @@ Key Assumptions:
     - The \# number of related services or pressures present relative to the maximum is the number of services or pressures related to the ecosystem component with a materiality rating greater than 0 divided by the maximum possible number of related services or pressures of any ecosystem component.
       - This serves to prevent ecosystem components that provide fewer services or are more difficult to damage from being too highly scored. This is a proxy for component importance.
       - The maximum possible related services is 19 and the maximum possible related pressures is 11.
+- The overall ecosystem component risk score is the sum of the ecosystem component dependency and pressure scores.
 
 #### Risk Pathways
+
+Risk pathways are specific interactions between individual pressures and ecosystem services that are concerning.
+
+Risk pathways highlight where high pressures relate strongly to high dependencies through ecosystem components.
+
+An example would be high land use damaging the structural integrity of the environment lessening its ability to prevent floods which your building site relies on for protection.
