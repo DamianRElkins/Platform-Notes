@@ -64,7 +64,7 @@ It is defined as the mean of the mean materiality, maximum materiality, and norm
 
 $$
 \begin{aligned}
-\text{Dependency Score} = \frac{\bar{materiality} + max(materiality) + |Related ES|}{3}
+\text{Dependency Score} = \frac{\bar{materiality} + max(materiality) + |\text{Related ES}|}{3}
 \end{aligned}
 $$
 
