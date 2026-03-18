@@ -79,4 +79,20 @@ Ecosystem Components are the specific elements of the environment that provide t
 
 ENCORE provides us with the relationships between pressures and components and dependencies and components. This describes which ways we may damage the components and what services each component provides.
 
+An example component is water. The Water ecosystem component is all liquid water on earth. ENCORE describes what services are provided by this water and how we can damage this supply.
+
+We quantify risk by Ecosystem Component so you can understand which parts of the natural world you should be most concerned about supporting.
+
+Key Assumptions:
+
+- Individual pressures and dependencies are assigned materiality ratings as above.
+- The ecosystem components are assigned component pressure and dependency scores.
+  - Pressure and dependency scores are calculated slightly differently than previous.
+  - The score is an average of mean materiality, max materiality, \# of related ecosystem services or pressures present, and the \# of related ecosystem services or pressures present relative to the maximum of any ecosystem component
+    - Materiality scores are determined exclusively using services or pressures described as related to the ecosystem component by ENCORE
+    - The \# of related services or pressures present is the fraction of services or pressures related to the ecosystem component according to ENCORE that have a materiality rating greater than 0.
+    - The \# number of related services or pressures present relative to the maximum is the number of services or pressures related to the ecosystem component with a materiality rating greater than 0 divided by the maximum possible number of related services or pressures of any ecosystem component.
+      - This serves to prevent ecosystem components that provide fewer services or are more difficult to damage from being too highly scored. This is a proxy for component importance.
+      - The maximum possible related services is 19 and the maximum possible related pressures is 11.
+
 #### Risk Pathways
