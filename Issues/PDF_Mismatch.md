@@ -224,6 +224,21 @@ Because EXIOBASE captures **much deeper supply chains**, it often estimates **la
 
 Explain the reasoning behind the difference (would need to look more closely into this)
 
-Use the CF x S multipliers for pdf and label it as direct impact (lessens our value pitch)
+Use the CF x S multipliers for PDF and label it as direct impact (lessens our value pitch)
 
 Use both CF x S and CF x M multipliers and show direct and full supply chain
+
+# New explanation of issue
+
+After using the direct CF x S conversion:
+
+These are the key reasons behind our difference.
+
+1. We are using a spend estimate of the items.
+
+- This can exacerbate any differences in multipliers between methodologies
+- We have made our best guesses for prices, but they are likely higher than rates paid
+
+2. EXIOBASE + IW+ is by design broader than One Click
+
+- EXIOBASE relies on broad averages to get its numbers so lacks the specificity of One Click in favour of simplicity of use
