@@ -242,3 +242,10 @@ These are the key reasons behind our difference.
 2. EXIOBASE + IW+ is by design broader than One Click
 
 - EXIOBASE relies on broad averages to get its numbers so lacks the specificity of One Click in favour of simplicity of use
+- This is specifically impactful if products used were considered green alternatives to the average version of that product
+
+3. Mismatch of Purchase Price and Basic Price
+
+- EXIOBASE uses the basic price of products for multipliers while we process with purchase prices
+- These can be 20%+ higher, thus impact is increased
+- We have a plan to address these using EU SUTs which provide conversions from purchase price to basic price
