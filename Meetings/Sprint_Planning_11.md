@@ -21,3 +21,5 @@
 
 - So what narrative
   - Plays into reporting
+
+## Structure and Priorities
